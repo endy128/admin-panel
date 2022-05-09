@@ -11,35 +11,47 @@
 
     <div class="container">
         <div class="header">
-            <div class="top-header">
-                <input type="text" name="search" id="search">
-                <img src="bell.jpg" alt="New Message Icon">
-                <img src="avatar.jpg" alt="Avatar">
-                <h3>Morgan Oakley</h3>
+            <div class="header-top">
+                <div class="search-bar">
+                    <img src="img/search.svg" alt="Search icon">
+                    <input type="text" name="search" id="search">
+                </div>
+                <div class="user-avatar">
+                    <img src="img/bell-ring-outline.svg" alt="New Message Icon">
+                    <img class="small-avatar" src="img/avatar.svg" alt="Avatar">
+                    <h3>Morgan Oakley</h3>
+                </div>
             </div>
-            <div class="lower-header">
-                <img src="avatar" alt="Large Avatar">
-                <p>Hi there, <br><h2>Morgan Oakley (@morgan)</h2></p>
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
+            <div class="header-bottom">
+                <div class="user-info">
+                    <img class="large-avatar" src="img/avatar.svg" alt="Large Avatar">
+                    <div class="welcome">
+                        <!-- <p>Hi there,<br><h2>Morgan Oakley (&#64;morgan)</h2></p> -->
+                        <p>Hi there,</p><h2>Morgan Oakley (&#64;morgan)</h2>
+                    </div>
+                </div>
+                <div class="user-buttons">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
             </div>
         </div>
         
         <div class="sidebar">
-            <h2>header</h2>
+            <h2><img class="filter-white" src="img/widgets.svg" alt="Dashboard icon"> Dashboard</h2>
             <ul class="navigation">
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>history</li>
-                <li>Tasks</li>
-                <li>Communities</li>
+                <li><img class="filter-white" src="img/home.svg" alt="Home icon">Home</li>
+                <li><img class="filter-white" src="img/profile.svg" alt="Ptofile icon">Profile</li>
+                <li><img class="filter-white" src="img/message.svg" alt="Messages icon">Messages</li>
+                <li><img class="filter-white" src="img/history.svg" alt="History icon">History</li>
+                <li><img class="filter-white" src="img/tasks.svg" alt="Tasks icon">Tasks</li>
+                <li><img class="filter-white" src="img/community.svg" alt="Communities icon">Communities</li>
             </ul>
             <ul class="settings">
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
+                <li><img class="filter-white" src="img/setting.svg" alt="Settings icon">Settings</li>
+                <li><img class="filter-white" src="img/support.svg" alt="Support icon">Support</li>
+                <li><img class="filter-white" src="img/privacy.svg" alt="Privacy icon">Privacy</li>
             </ul>
         </div>
 
