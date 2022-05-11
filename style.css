@@ -35,29 +35,28 @@ html, body {
     grid-area: 1 / 2 / 1 / 3;
     background-color: var(--light-color);
     display: grid;
-    grid-template: 1fr 1fr / 1fr;
+    grid-template: 1fr 2fr / 1fr;
 }
 
 .header-top {
     display: grid;
-    grid-template: 1fr / 5fr 1fr;
-    justify-content: space-between;
-    padding-left: 64px;
+    grid-template: 1fr / minmax(600px, 5fr) 1fr;
+    padding-left: 48px;
     padding-right: 64px;
-    padding-top: 16px;;
+    margin-top: 16px;;
     align-items: center;
 }
 
 
 .search-bar {
-    display: grid;
-    grid-template: 1fr / 1fr 10fr 2fr;
-    justify-content: start;
-    gap: 4px;
+
+
 }
 
 .search-bar img {
-    justify-self: end;
+    position: relative;
+    top: 10px;
+    height: 32px;
 
 }
 
@@ -80,6 +79,7 @@ html, body {
 
 input {
     height: 32px;
+    width: 500px;
     margin-right: 32px;
     border-radius: 25px;
     background-color: var(--shaded-color);
@@ -87,9 +87,6 @@ input {
     box-shadow: 5px 5px 5px var(--shadow-color) inset;
 }
 
-.search-bar img {
-    height: 32px;
-}
 
 .header-bottom {
     display: grid;
@@ -171,6 +168,7 @@ button {
    box-shadow: 0px 5px 15px var(--shadow-color) inset;
    display: grid;
    grid-template:  1fr / 5fr 2fr;
+   padding-bottom: 48px;
 }
 
 .content-left h2,
